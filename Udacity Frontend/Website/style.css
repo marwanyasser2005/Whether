@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+  }
+  
+  /* App container styling */
+  .app-container {
+    max-width: 360px;
+    width: 100%;
+    padding: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+  }
+  
+  .app-container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Label styling */
+  label {
+    display: block;
+    font-size: 15px;
+    color: #555;
+    margin: 15px 0 5px;
+    text-align: left;
+  }
+  
+  /* Input and textarea styling */
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+    background-color: #ffffff;
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+  }
+  
+  button:hover {
+    background-color: #43a047;
+  }
+  
+  /* Entry display area */
+  #entryHolder {
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  #entryHolder div {
+    margin: 6px 0;
+  }
+  
+  #entryHolder strong {
+    color: #4CAF50;
+  }
+  

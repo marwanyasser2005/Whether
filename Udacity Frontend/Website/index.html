@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Journal App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-container">
+    <header>
+      <h1>Weather Journal</h1>
+    </header>
+
+    <section aria-labelledby="journal-input">
+      <form id="journal-input" aria-label="Weather Journal Entry Form">
+        <label for="zip">Enter Zip Code:</label>
+        <input type="text" id="zip" name="zip" placeholder="Zip Code" aria-required="true" required>
+
+        <label for="feelings">How are you feeling today?</label>
+        <textarea id="feelings" name="feelings" placeholder="Your thoughts..." aria-required="true" required></textarea>
+
+        <button type="button" id="generate" aria-label="Generate Weather Journal Entry">Generate</button>
+      </form>
+    </section>
+
+    <section id="entryHolder" aria-labelledby="journal-output" style="display: none;">
+      <h2 id="journal-output">Your Entry</h2>
+      <div><strong>Date:</strong> <span id="date" aria-live="polite"></span></div>
+      <div><strong>Temperature:</strong> <span id="temp" aria-live="polite"></span></div>
+      <div><strong>Feelings:</strong> <span id="content" aria-live="polite"></span></div>
+    </section>
+  </main>
+  
+  <script src="app.js"></script>
+</body>
+</html>
